@@ -1,0 +1,9 @@
+machine:
+  network:
+    hostname: ${ hostname }
+    interfaces:
+      - deviceSelector:
+          driver: bcmgenet
+        dhcp: true
+        vip:
+          ip: ${ vip }
